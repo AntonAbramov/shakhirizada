@@ -1,0 +1,36 @@
+.tabs {
+	.tab-nav {
+		margin-bottom:15px;
+		&:after {
+			content:"";
+			clear:both;
+			display: table;
+		}
+		a:first-child {
+			float:left;
+		}
+		a {
+			float:right;
+			width:48.5%;
+			display: block;
+			text-align: center;
+			border-radius: 3px;
+			background: #a4a9ae;
+			color:#fff;
+			border-bottom:3px solid #83898f;
+			font-size: 14px;
+			height:30px;
+			line-height: 30px;
+			text-decoration: none;
+			@include transition(none);
+			&.active {
+				background: #4fc1e9;
+				border-color: #3bafda;
+			}
+		}
+
+	}
+	.tab-content {
+
+	}
+}

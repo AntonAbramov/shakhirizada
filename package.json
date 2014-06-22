@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "China_phone ===========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AntonAbramov/China_phone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonAbramov/China_phone/issues"
+  },
+  "homepage": "https://github.com/AntonAbramov/China_phone",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

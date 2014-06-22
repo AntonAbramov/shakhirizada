@@ -1,0 +1,79 @@
+body {
+	//background:url(../img/patern-bg.jpg) repeat #fff;
+	background:url(../img/pattern.png) repeat #fff;
+	font-size: 13px;
+	font-family: $font;
+	color:#707070;
+	line-height: 20px;
+	min-width: 960px;
+	> .body {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top:0;
+	color:#555;
+	line-height: 1;
+}
+h1, h2 {
+	font-size: 24px;
+}
+h3 {
+}
+h3, h4, h5 {
+	font-size: 18px;
+}
+strong {
+}
+:focus {
+	outline: none;
+}
+a {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	text-decoration: underline;
+	color:#0267b5;
+	&:hover, &:focus {
+		color:#0267b5;
+		text-decoration: none;
+	}
+}
+textarea {
+	resize: none;
+	border:2px solid #e3e4e8;
+	border-radius: 3px;
+	padding:10px;
+	color:#707070;
+	font-size: 13px;
+	line-height: 16px;
+}
+.cf {
+	&:after {
+		content:"";
+		display: table;
+		clear:both;
+	}
+}
+.mb10 {
+	margin-bottom:10px;
+}
+.mb20 {
+	margin-bottom:20px;
+}
+.right {
+	float:right;
+}
+.w960 {
+	width:960px;
+	margin:0 auto;
+	padding:0 10px;
+	&:after {
+		content:"";
+		clear:both;
+		display: table;
+	}
+}
