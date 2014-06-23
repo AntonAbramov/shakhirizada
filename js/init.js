@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	galery();
 
 });
 
@@ -48,3 +48,12 @@ var tabs = function () {
 }
 
 
+var galery = function(){
+	if (1){
+		$(".fancybox").fancybox({
+			helpers		: {
+				title	: { type : 'inside' }
+			}
+		});
+	}
+}

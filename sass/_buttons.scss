@@ -1,0 +1,19 @@
+.btn {
+	padding:0 10px;
+	border-bottom:2px solid #f8613a;
+	background: #e74924;
+	text-transform: uppercase;
+	color:#fff;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 40px;
+	&:hover, &:focus {
+		border-bottom:2px solid #f8613a;
+		background: #e9380f;
+		color:#fff;
+	}
+	&:active {
+		border-bottom:2px solid #f8613a;
+		background: #bd3110;
+	}
+}

@@ -1,26 +1,25 @@
 body {
-	//background:url(../img/patern-bg.jpg) repeat #fff;
-	background:url(../img/pattern.png) repeat #fff;
-	font-size: 13px;
-	font-family: $font;
-	color:#707070;
-	line-height: 20px;
-	min-width: 960px;
-	> .body {
-		position: relative;
-		z-index: 1;
-	}
+	font-size: 14px;
+	color:#bdbdbd;
+	line-height: 18px;
+	background: #0f0f0f;
+	font-family: helveticaneuecyrroman;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	margin-top:0;
 	color:#555;
 	line-height: 1;
+	margin-bottom: 20px;
 }
-h1, h2 {
-	font-size: 24px;
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 28px;
 }
 h3 {
+	font-size: 24px;
 }
 h3, h4, h5 {
 	font-size: 18px;
@@ -36,11 +35,14 @@ a {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	text-decoration: underline;
-	color:#0267b5;
+	color:#e74924;
 	&:hover, &:focus {
-		color:#0267b5;
+		color:#e74924;
 		text-decoration: none;
 	}
+}
+p {
+	margin-bottom:0;
 }
 textarea {
 	resize: none;
@@ -75,5 +77,211 @@ textarea {
 		content:"";
 		clear:both;
 		display: table;
+	}
+}
+.inn {
+	width:960px;
+	margin:0 auto;
+	@extend .cf;
+}
+.index-big-pic {
+	background: url(../img/pic.jpg) 50% 0;
+	height:700px;
+	height:440px;
+	position: relative;
+	&:before {
+		content:"";
+		background: url(../img/white_corner.png) no-repeat;
+		width:105px;
+		height:61px;
+		z-index: 2;
+		position: absolute;
+		top:0;
+		left:0;
+
+	}
+	.white-t {
+		position: absolute;
+		top:110px;
+		left:0;
+		z-index: 2;
+		color:#fff;
+		width:650px;
+		font-size: 48px;
+		line-height: 41px;
+	}
+	.orange-t {
+		position: absolute;
+		top:220px;
+		left:0;
+		z-index: 2;
+		color:#e74924;
+		width:550px;
+		font-size: 48px;
+		line-height: 40px;
+	}
+}
+.audio-player {
+	margin-bottom: 50px;
+	height:60px;
+	background: #272727;
+}
+.heading-patter-lines {
+	background: url(../img/lines.png) no-repeat 200px 10px;
+	h1 {
+		color:#e1e1e1;
+		margin:0;
+		padding-right:3px;
+		background: #0f0f0f;
+		float:left;
+	}
+}
+
+.columns {
+	@extend .cf;
+	.column {
+		width:50%;
+		float:left;
+		&:first-child {
+			padding-right:10px;
+		}
+		&:last-child {
+			padding-left: 10px;
+		}
+	}
+}
+.index-small-galery {
+	margin-top:40px;
+	> .cf {
+		margin-bottom: 10px;
+	}
+	.cf > a {
+		display: block;
+		float:left;
+		margin-left: 10px;
+		position: relative;
+		&:after {
+			content: "";
+			height:2px;
+			background: rgba(225,225,225, .5);
+			left:0;
+			bottom:0;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		img {
+			display: block;
+			height:80px;
+			width:110px;
+		}
+	}
+	.show-all {
+		text-align: right;
+	}
+}
+.events-news {
+	margin:17px -10px 0;
+	.box {
+		width:225px;
+		margin:0 10px 20px;
+		float:left;
+		height:160px;
+		position: relative;
+		text-align: right;
+		overflow: hidden;
+		background: #e1e1e1;
+		padding:10px 10px 10px 20px;
+		&:before {
+			content:"";
+			background: url(../img/corner-top.png) no-repeat;
+			width:84px;
+			height:49px;
+			top:0;
+			left:0;
+			z-index: 1;
+			position: absolute;
+		}
+		&:after {
+			content:"";
+
+			position: absolute;
+			z-index: 2;
+		}
+		&.mus:after {
+			@include icons-sprite(music);
+			width:16px;
+			height:16px;
+			top:10px;
+			left:8px;
+		}
+		&.micr:after {
+			@include icons-sprite(microphone);
+			width:15px;
+			height:20px;
+			top:8px;
+			left:10px;
+		}
+		&.video:after {
+			@include icons-sprite(film);
+			width:16px;
+			height:15px;
+			top:8px;
+			left:10px;
+		}
+		&.video {
+			img {
+				display: block;
+				float:left;
+				width:225px;
+				height:160px;
+				margin:-10px 0 0 -20px;
+			}
+		}
+		.date {
+			color:#aeaeae;
+		}
+		.title {
+			padding-left: 30px;
+			margin:0 0 5px;
+		}
+		.title, .title a {
+			color:#323232;
+			font-size: 18px;
+			text-decoration: none;
+			&:hover {
+				color:#e95027;
+				text-decoration: none;
+			}
+		}
+		.description {
+			color:#707070;
+			max-height: 72px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+		}
+	}
+}
+.index-mid-galery {
+	margin-top:30px;
+	> .cf a {
+		display: block;
+		float:left;
+		margin-left: 15px;
+		width:141px;
+		height:141px;
+		&.active img{
+			border:2px solid #bd4322;
+		}
+		img {
+			width:100%;
+			border:2px solid #0f0f0f;
+			height:100%;
+		}
+	}
+	.like-tamada {
+		margin-top:20px;
+		text-align: right;
 	}
 }

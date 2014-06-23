@@ -1,0 +1,60 @@
+.header {
+	margin-bottom: 30px;
+	padding-top:10px;
+	.header-top {
+		background: #272727;
+		height:72px;
+		margin-bottom: 5px;
+		.logo {
+			float:left;
+			margin-right:35px;
+			display: block;
+			position: relative;
+			top:11px;
+		}
+		nav {
+			@extend .cf;
+			a {
+				display: block;
+				line-height: 72px;
+				font-size: 16px;
+				float:left;
+				color:#c1c0c0;
+				text-decoration: none;
+				position: relative;
+				padding:0 10px;
+				text-transform: uppercase;
+				&:hover, &:focus {
+					color:#fff;
+				}
+				&.active {
+					background: #e74924;
+					border-bottom:2px solid #f8613a;
+					line-height: 70px;
+					color:#fff;
+					&:before {
+						content:"";
+						width:100%;
+						height:10px;
+						position: absolute;
+						top:-10px;
+						left:0;
+						background: rgba(231,73,36,.5);
+					}
+				}
+			}
+		}
+	}
+	.header-mid {
+		background: url(../img/brd2.png) repeat-x 0 8px;
+		.header-mid-bg {
+			background: #0f0f0f;
+			color:#7e7e7e;
+			float:left;
+			margin-left: -5px;
+			padding-left:5px;
+			padding-right:5px;
+			font-size: 16px;
+		}
+	}
+}
