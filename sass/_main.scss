@@ -127,7 +127,7 @@ textarea {
 	background: #272727;
 }
 .heading-patter-lines {
-	background: url(../img/lines.png) no-repeat 200px 10px;
+	background: url(../img/lines.png) no-repeat 170px 10px;
 	h1 {
 		color:#e1e1e1;
 		margin:0;
@@ -284,4 +284,76 @@ textarea {
 		margin-top:20px;
 		text-align: right;
 	}
+}
+.content-left {
+	float:left;
+	width:560px;
+}
+.aside-right {
+	float:right;
+	width:380px;
+	.heading {
+		padding-left: 25px;
+		position: relative;
+		color:#fff;
+		margin-bottom: 10px;
+		font-size: 18px;
+		.icon {
+			position: absolute;
+			left:0;
+			top:2px;
+			z-index: 2;
+		}
+	}
+	.feature-event {
+		margin:0 0 20px;
+		.date {
+			margin-bottom: 2px;
+			color:#adadad;
+			span {
+				color:#e74924;
+			}
+		}
+		.description {
+			color:#fff;
+
+		}
+	}
+}
+.albom {
+	border:1px solid #363636;
+	padding:10px;
+	margin-bottom: 20px;
+
+	.albom-pic {
+		float:left;
+		width:250px;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+.albom-info {
+	padding-left: 270px;
+	.albom-name {
+		color:#fff;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	.download {
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	.text {
+		color:#bdbdbd;
+		line-height: 24px;
+	}
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.icons-download {
+	margin-right: 5px;
+	top:2px;
+	position: relative;
 }
