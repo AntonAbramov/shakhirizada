@@ -1,5 +1,7 @@
 $(document).ready(function () {
 	galery();
+	faqList();
+
 
 });
 
@@ -49,11 +51,25 @@ var tabs = function () {
 
 
 var galery = function(){
-	if (1){
+	if ($(".fancybox").length){
 		$(".fancybox").fancybox({
 			helpers		: {
 				title	: { type : 'inside' }
 			}
 		});
 	}
+	if ($(".galery-video").length) {
+		$(".galery-video").fancybox();
+	}
+
+	if ($('.galery-item').length) {
+		$('.galery-item').fancybox();
+	}
+}
+
+faqList = function(){
+	$('.faq-list').find('.heading').on('click', function(){
+		$(this).parents('li').toggleClass('active');
+	})
+
 }
