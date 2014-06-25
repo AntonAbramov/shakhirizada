@@ -1,0 +1,157 @@
+.audio-player {
+	line-height: 60px;
+	.example {
+		margin: 50px auto 0;
+		width: 400px;
+	}
+	.player {
+		height: 60px;
+		position: relative;
+		width: 100%;
+		z-index: 2;
+		&:after {
+			content:"";
+			background: url(../img/red_corner.png);
+			width:105px;
+			height:60px;
+			position: absolute;
+			right:0;
+			top:0;
+			z-index: 2;
+		}
+	}
+	.title, .artist {
+		font-family: verdana;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	.title {
+		color: #FFFFFF;
+		font-size: 14px;
+		font-weight: bold;
+		top: 23px;
+		float:left;
+		margin:0 40px;
+	}
+	.artist {
+		color: #EEEEEE;
+		font-size: 12px;
+		top: 40px;
+		display: none;
+	}
+	.pl {
+		cursor: pointer;
+		height: 34px;
+		left: 270px;
+		position: absolute;
+		top: 20px;
+		width: 32px;
+	}
+	.pl:hover {
+		top: 21px;
+	}
+	.cover {
+		border-radius: 5px 5px 5px 5px;
+		height: 94px;
+		left: 20px;
+		position: absolute;
+		top: 20px;
+		width: 94px;
+	}
+	.controls {
+		@extend .cf;
+		float:left;
+	}
+	.hidden {
+		display: none;
+	}
+	.controls .visible {
+		display: block;
+	}
+	.volume {
+		float:left;
+		height: 8px;
+		border-radius: 10px;
+		width: 112px;
+		background: #494949;
+		position: relative;
+		top:26px;
+		margin-right: 70px;
+		&:after {
+			content:"";
+			@include icons-sprite(volume);
+			width:11px;
+			height:22px;
+			position: absolute;
+			right:-20px;
+			top:-6px;
+		}
+	}
+	.tracker {
+		top:26px;
+		height: 8px;
+		position: relative;
+		width: 285px;
+		float:left;
+		border-radius: 10px;
+		background: #434343;
+		.ui-slider-range {
+			background: #a8a8a8;
+		}
+	}
+	.ui-slider-range {
+		background: #ec582b;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		border-radius: 10px;
+
+	}
+	.tracker {
+
+
+	}
+	.ui-slider-handle {
+		cursor: pointer;
+		height: 10px;
+		margin-left: -5px;
+		position: absolute;
+		top: 0px;
+		width: 10px;
+		z-index: 2;
+		@include icons-sprite(it);
+	}
+	.volume .ui-slider-handle {
+		@include icons-sprite(it);
+	}
+	.playlist {
+		background-color: #333333;
+		border-radius: 5px 5px 5px 5px;
+		list-style-type: none;
+		margin: -10px 0 0 2px;
+		padding-bottom: 10px;
+		padding-top: 15px;
+		position: relative;
+		width: 326px;
+		z-index: 1;
+	}
+	.playlist li {
+		color: #EEEEEE;
+		cursor: pointer;
+		margin: 0 0 5px 15px;
+	}
+	.playlist li.active {
+		font-weight: bold;
+	}
+	.icons-audio_pause {
+		display: none;
+		float:left;
+	}
+	.visible.icons-audio_pause {
+		display: block;
+	}
+	.rew, .fwd, .play, .icons-audio_headphone {
+		float:left;
+	}
+}

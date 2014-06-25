@@ -11,6 +11,7 @@ h1,h2,h3,h4,h5,h6 {
 	color:#555;
 	line-height: 1;
 	margin-bottom: 20px;
+	font-family: helveticaneuecyrlight;
 }
 h1 {
 	font-size: 36px;
@@ -105,7 +106,7 @@ textarea {
 	}
 	.white-t {
 		position: absolute;
-		top:110px;
+		top:70px;
 		left:0;
 		z-index: 2;
 		color:#fff;
@@ -115,13 +116,14 @@ textarea {
 	}
 	.orange-t {
 		position: absolute;
-		top:220px;
+		top:180px;
 		left:0;
 		z-index: 2;
 		color:#e74924;
 		width:550px;
 		font-size: 48px;
 		line-height: 40px;
+		font-family: helveticaneuecyrultralight;
 	}
 }
 .audio-player {
@@ -244,15 +246,17 @@ textarea {
 		}
 		.date {
 			color:#aeaeae;
+			font-family: helveticaneuecyrbold;
 		}
 		.title {
-			padding-left: 30px;
+			padding-left: 20px;
 			margin:0 0 5px;
 		}
 		.title, .title a {
 			color:#323232;
 			font-size: 18px;
 			text-decoration: none;
+			font-family: helveticaneuecyrbold;
 			&:hover {
 				color:#e95027;
 				text-decoration: none;
@@ -302,6 +306,7 @@ textarea {
 		color:#fff;
 		margin-bottom: 20px;
 		font-size: 18px;
+		font-family: helveticaneuecyrbold;
 		.icon {
 			position: absolute;
 			left:0;
@@ -314,6 +319,7 @@ textarea {
 		.date {
 			margin-bottom: 2px;
 			color:#adadad;
+			font-family: helveticaneuecyrbold;
 			span {
 				color:#e74924;
 			}
@@ -348,8 +354,8 @@ textarea {
 		margin-bottom: 5px;
 	}
 	.download {
-		font-weight: bold;
 		margin-bottom: 10px;
+		font-family: helveticaneuecyrbold;
 	}
 	.text {
 		color:#bdbdbd;
@@ -436,7 +442,7 @@ textarea {
 		.title,.song-length{
 			color:#ed5d2e;
 		}
-		.icons-play {
+		.icons-p {
 			display: none;
 		}
 		.playing-td {
@@ -571,6 +577,7 @@ textarea {
 .contacts-list {
 	margin-bottom: 40px;
 	li {
+		font-family: helveticaneuecyrlight;
 		margin-bottom: 20px;
 		color:#e1e1e1;
 		font-size: 18px;
@@ -586,9 +593,9 @@ input[type='text'],
 input[type='password'] {
 	background: none;
 	border:1px solid #4b4b4b;
-	height:32px;
+	height:30px;
 	font-size: 14px;
-	line-height: 30px;
+	line-height: 28px;
 	padding:5px 20px;
 	color:#7d7d7d;
 }
