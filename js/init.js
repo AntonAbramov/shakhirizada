@@ -1,6 +1,8 @@
 $(document).ready(function () {
 	galery();
 	faqList();
+	modal();
+
 
 // inner variables
 	var song;
@@ -216,4 +218,17 @@ faqList = function () {
 		$(this).parents('li').toggleClass('active');
 	})
 
+}
+
+var modal = function(){
+	$('.modal').find('.close-modal').on('click', function(){
+		$(this).parents('.modal').fadeOut();
+		$('.overlay').fadeOut();
+	});
+
+
+	$('.show-modal').on('click', function(){
+		$('.modal').fadeIn();
+		$('.overlay').fadeIn();
+	});
 }
