@@ -149,6 +149,10 @@ $(document).ready(function () {
 			song.volume = 1;
 		$(this).toggleClass('mute');
 	})
+
+
+
+
 });
 
 $(window).resize(function () {
@@ -211,6 +215,9 @@ var galery = function () {
 	if ($('.galery-item').length) {
 		$('.galery-item').fancybox();
 	}
+
+
+
 }
 
 faqList = function () {
@@ -220,19 +227,63 @@ faqList = function () {
 
 }
 
-var modal = function(){
-	$('.modal').find('.close-modal').on('click', function(){
+var modal = function () {
+	$('.modal').find('.close-modal').on('click', function () {
 		$(this).parents('.modal').fadeOut();
 		$('.overlay').fadeOut();
 	});
 
 
-	$('.show-modal').on('click', function(){
+	$('.show-modal').on('click', function () {
 		$('.modal').fadeIn();
 		$('.overlay').fadeIn();
 	});
 
-	$('.download').find('.icons-doc').on('click', function(){
+	$('.download').find('.icons-doc').on('click', function () {
 		$(this).parent().find('.modal, .overlay').fadeIn().parent('.download');
 	})
 }
+
+
+
+// Fires whenever a player has finished loading
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+// Fires when the player's state changes.
+function onPlayerStateChange(event) {
+    // Go to the next video after the current one is finished playing
+    if (event.data === 0) {
+        $.fancybox.next();
+    }
+}
+
+// The API will call this function when the page has finished downloading the JavaScript for the player API
+
+    // Initialise the fancyBox after the DOM is loaded
+$(document).ready(function() {
+    $(".fancybox")
+        .attr('rel', 'gallery')
+        .fancybox({
+            openEffect  : 'none',
+            closeEffect : 'none',
+            nextEffect  : 'none',
+            prevEffect  : 'none',
+            padding     : 0,
+            margin      : 50,
+            beforeShow  : function() {
+                // Find the iframe ID
+                var id = $.fancybox.inner.find('iframe').attr('id');
+
+                // Create video player object and add event listeners
+                var player = new YT.Player(id, {
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+        });
+});
+

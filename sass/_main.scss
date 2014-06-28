@@ -696,3 +696,39 @@ input[type='password'] {
 	background: rgba(0,0,0, .55);
 	display: none;
 }
+
+.video-item {
+	margin-bottom:20px;
+	line-height: 20px;
+	padding:10px;
+	border:1px solid #363636;
+	padding-left:150px;
+	position: relative;
+	min-height: 100px;
+	font-family: helveticaneuecyrultralight;
+	a {
+		color:#e1e1e1;
+		font-size: 18px;
+		margin-bottom: 5px;
+		display: block;
+		text-decoration: none;
+		img {
+			position: absolute;
+			left:10px;
+			top:10px;
+			width:120px;
+			height:80px;
+			border:2px solid #0f0f0f;
+			display: block;
+		}
+		&:hover {
+			img {
+				border-color:#bd4322;
+			}
+		}
+	}
+	.date {
+		font-size: 14px;
+		color:#acacac;
+	}
+}
