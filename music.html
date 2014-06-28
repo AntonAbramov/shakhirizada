@@ -73,21 +73,23 @@
 					<tr class="playing">
 						<td class="name">
 							<span class="title">Track 1 - Unknown</span>
-							<span class="song-length"> 3:20</span>
 						</td>
 						<td class="audio-timer">
-							<span class="play icon icons-p"></span>
-							<span class="playing-td cf">
-								<span class="pause icon icons-pause"></span>
-								<span class="song-duration">
+							<!--<div class="audio-player">
+								<div class="player">
+									<div class="controls">
+										<div class="play icon icons-p"></div>
+										<div class="pause icon icons-pause"></div>
+									</div>
+									<div class="volume"></div>
 
-									<span class="duration-passed">
-										<span class="icon icons-circle">&nbsp;</span>
-									</span>
-									<span class="volume icon icons-volume"></span>
-								</span>
-								<span class="volume"></span>
-							</span>
+								</div>
+								<ul class="playlist hidden">
+									<li audiourl="m.mp3"  artist="Artist 1">01.mp3</li>
+									<li audiourl="m2.mp3"  artist="Artist 2">02.mp3</li>
+								</ul>
+							</div>-->
+							<audio src="music/m.mp3" controls></audio>
 						</td>
 						<td class="download">
 							<i class="icon icons-doc"></i>
@@ -122,110 +124,14 @@
 					<tr>
 						<td class="name">
 							<span class="title">Track 1 - Unknown</span>
-							<span class="song-length"> 3:20</span>
 						</td>
 						<td class="audio-timer">
-							<span class="play icon icons-p">
-							</span>
-							<span class="playing-td cf">
-								<span class="pause icon icons-pause"></span>
-								<span class="song-duration">
-									<span class="icon icons-circle"></span>
-								</span>
-								<span class="volume"></span>
-							</span>
+							<audio src="music/m2.mp3" controls></audio>
 						</td>
 						<td class="download">
 							<i class="icon icons-doc"></i>
 							<a href="#"><i class="icon icons-download"></i>Скачать </a>
-							<div class="modal">
-								<button class="close-modal"><i class="icon icons-close"></i></button>
-									<p>
-										Удивилась,увидев тебя в том конце аллеи.
-										Я разлюбила тебя,но всё же какой же ты красивый.
-										Я изменилась ,ты повзрослел и стал еще смелее.
-										Ты приближался,как герой,немых и черно-белых фильмов.
-										И сердце билось от того так сильно.
-									</p>
-									<p>
-										Удивилась,увидев тебя в том конце аллеи.
-										Я разлюбила тебя,но всё же какой же ты красивый.
-										Я изменилась ,ты повзрослел и стал еще смелее.
-										Ты приближался,как герой,немых и черно-белых фильмов.
-										И сердце билось от того так сильно.
-									</p>
-									<p>
-										Удивилась,увидев тебя в том конце аллеи.
-										Я разлюбила тебя,но всё же какой же ты красивый.
-										Я изменилась ,ты повзрослел и стал еще смелее.
-										Ты приближался,как герой,немых и черно-белых фильмов.
-										И сердце билось от того так сильно.
-									</p>
-							</div>
-							<div class="overlay">&nbsp;</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="name">
-							<span class="title">Track 1 - Unknown</span>
-							<span class="song-length"> 3:20</span>
-						</td>
-						<td class="audio-timer">
-							<span class="play icon icons-p">
-							</span>
-							<span class="playing-td cf">
-								<span class="pause icon icons-pause"></span>
-								<span class="song-duration">
-									<span class="icon icons-circle"></span>
-								</span>
-								<span class="volume"></span>
-							</span>
-						</td>
-						<td class="download">
-							<i class="icon icons-doc"></i>
-							<a href="#"><i class="icon icons-download"></i>Скачать </a>
-						</td>
-					</tr>
-					<tr>
-						<td class="name">
-							<span class="title">Track 1 - Unknown</span>
-							<span class="song-length"> 3:20</span>
-						</td>
-						<td class="audio-timer">
-							<span class="play icon icons-p">
-							</span>
-							<span class="playing-td cf">
-								<span class="pause icon icons-pause"></span>
-								<span class="song-duration">
-									<span class="icon icons-circle"></span>
-								</span>
-								<span class="volume"></span>
-							</span>
-						</td>
-						<td class="download">
-							<i class="icon icons-doc"></i>
-							<a href="#"><i class="icon icons-download"></i>Скачать </a>
-						</td>
-					</tr>
-					<tr>
-						<td class="name">
-							<span class="title">Track 1 - Unknown</span>
-							<span class="song-length"> 3:20</span>
-						</td>
-						<td class="audio-timer">
-							<span class="play icon icons-p">
-							</span>
-							<span class="playing-td cf">
-								<span class="pause icon icons-pause"></span>
-								<span class="song-duration">
-									<span class="icon icons-circle"></span>
-								</span>
-								<span class="volume"></span>
-							</span>
-						</td>
-						<td class="download">
-							<i class="icon icons-doc"></i>
-							<a href="#"><i class="icon icons-download"></i>Скачать </a>
+
 						</td>
 					</tr>
 				</table>
@@ -333,6 +239,7 @@
 	<script src="js/jquery-2.0.3.min.js"></script>
 	<script src="js/mousewheel.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 	<script src="js/init.js"></script>
 </body>
 </html>

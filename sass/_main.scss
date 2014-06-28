@@ -383,17 +383,11 @@ textarea {
 .albom-table {
 	width:100%;
 	td {
-		padding:5px 10px;
+		padding:5px 2px;
 	}
 	.name {
-		width:240px;
+		width:150px;
 		.title {
-			color:#fff;
-			float:left;
-			width:220px;
-		}
-		.song-length {
-			float:right;
 			color:#fff;
 		}
 	}
@@ -442,9 +436,7 @@ textarea {
 		.title,.song-length{
 			color:#ed5d2e;
 		}
-		.icons-p {
-			display: none;
-		}
+
 		.playing-td {
 			display: block;
 		}
@@ -730,5 +722,40 @@ input[type='password'] {
 	.date {
 		font-size: 14px;
 		color:#acacac;
+	}
+}
+.albom-table {
+
+	.audio-player {
+		background: none;
+		height:auto;
+		margin:0;
+		.player:after {
+			display: none;
+		}
+		.play, .pause, .volume {
+			float:left;
+			cursor: pointer;
+		}
+		.volume {
+			margin:0;
+			top:4px;
+			width:100px;
+			margin-left: 20px;
+		}
+	}
+	.player {
+		height:auto;
+	}
+}
+.icons-p {
+	width:12px;
+}
+.icons-pause {
+	display: none;
+	min-width: 12px;
+	height:14px;
+	&.visible {
+		display: block;
 	}
 }
