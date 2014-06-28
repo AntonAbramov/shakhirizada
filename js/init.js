@@ -231,4 +231,8 @@ var modal = function(){
 		$('.modal').fadeIn();
 		$('.overlay').fadeIn();
 	});
+
+	$('.download').find('.icons-doc').on('click', function(){
+		$(this).parent().find('.modal, .overlay').fadeIn().parent('.download');
+	})
 }

@@ -28,7 +28,7 @@
 	position: relative;
 	background: #f9f9f9;
 	color: #444;
-	padding:60px 20px 20px!important;
+	padding:60px 10px 10px!important;
 	text-shadow: none;
 }
 
@@ -220,22 +220,16 @@
 	right: 50%;
 	margin-bottom: -35px;
 	z-index: 8050;
-	text-align: center;
+	text-align: left;
 }
 
 .fancybox-title-float-wrap .child {
-	display: inline-block;
-	margin-right: -100%;
-	padding: 2px 20px;
+	display: block;
+	padding: 2px 110px 2px 0;
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
-	background: rgba(0, 0, 0, 0.8);
-	-webkit-border-radius: 15px;
-	   -moz-border-radius: 15px;
-	        border-radius: 15px;
-	text-shadow: 0 1px 2px #222;
-	color: #FFF;
-	font-weight: bold;
+	color: #505050;
 	line-height: 24px;
+	font-size: 24px;
 	white-space: nowrap;
 }
 
